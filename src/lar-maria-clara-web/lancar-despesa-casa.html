@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Cadastro de Contas</title>
+    <title>Lançamento de despesas Lar</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -128,51 +128,50 @@
 
             <main>
              <div> 
-                    <form>
+                <form>
         
-        <!-- caixas de texto -->
-        <div class="form-group">
-            <label for="NomeDaConta">Nome de identificação da conta</label>
-            <input class="form-control" type="text" id="titular" placeholder="Digite o nome do titular">
-        </div>
- <!-- select banco -->
+        <!-- select Tipo -->
  <div class="form-group">
-    <label for="Bancos">Banco</label>
-    <select class="form-control" id="Bancos">
-        <option>Banco do Brasil</option>
-        <option>Bradesco</option>
-        <option>Caixa Econômica</option>
-        <option>Mercantil</option>
+    <label for="TipoDespesa">Tipo de Despesas</label>
+    <select class="form-control" id="TipoDespesa">
+        <option>Alimentação</option>
+        <option>Combustível</option>
+        <option>Conta de água</option>
+        <option>Conta de luz</option>
+        <option>Internet</option>
+        <option>Telefônia</option>
+        <option>Hospedagem</option>
+        <option>transporte</option>
+        <option>Ipostos</option>
+        <option>gás de cozinha</option>
+        <option>Outros</option>
     </select>
     <!--Saldo da conta-->
 </div>
-
+ <!-- textarea -->
+ <div class="form-group">
+    <label for="InfoGastoCasa">Breve descrição da Despesa</label>
+    <textarea class="form-control" id="InfoGastoCasa" rows="3"></textarea>
+</div>
 <div class="form-group">
-    <label for="NomeDaConta">Número da agência</label>
+    <label for="SaldoAtualConta">Saldo Atual em conta</label>
     <input class="form-control" type="number" id="AgenciaBancaria" placeholder="Digite o número da agência">
 </div>
 <div class="form-group">
-    <label for="NomeDaConta">Número da Conta</label>
-    <input class="form-control" type="number" id="ContaBancaria" placeholder="Digite o número da Conta">
+    <label for="SaldoFinal">Saldo final em conta</label>
+    <input class="form-control" type="number" id="AgenciaBancaria" placeholder="Digite o número da agência">
+</div>
+<!-- Carregar arquivo cupom fiscal -->
+<div class="custom-file">
+    <label class="custom-file-label">Insira imagem da nota/cupom</label> <br>
+    <input class="custom-file-input" type="file" id="arquivo">
 </div>
 <div class="form-group">
-    <label for="SaldoInicial">Saldo atual em conta</label>
-    <input class="form-control" type="number" id="saldoConta" placeholder="Digite o valor atual na conta">
-</div>
-<div class="form-group">
-    <label for="OperVariacao">Operação/Variação</label>
-    <input class="form-control" type="text" id="OperVariacao" placeholder="Digite a operação / Variação">
-</div>
-<div class="form-group">
-    <label for="dataSaldo">Data de Consulta do Saldo</label>
-    <input class="form-control" type="datetime" id="dataSaldo" placeholder="informe a data de consulta do saldo">
-</div>
-
-        <!-- button -->
-        <input class="btn btn-primary" type="submit" value="Salvar">
+  <!-- Gravar / cancelar  -->
+        <input class="btn btn-primary" type="submit" value="Gravar">
         <input class="btn btn-danger" type="submit" value="Cancelar">
-
     </form>
+    
     <br><br>
 
              </div>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard - Lar Maria Clara</title>
+    <title>Cadastro de Contas</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
-                <input class="form-control" type="text" placeholder="Procurar..." aria-label="Procurar..." aria-describedby="btnNavbarSearch" />
+                <input class="form-control" type="text" placeholder="Search..." aria-label="Procurar..." aria-describedby="btnNavbarSearch" />
                 <button class="btn btn-primary" id="btnNavbarSearch" type="button">
                     <i class="fas fa-search"></i>
                 </button>
@@ -66,7 +66,13 @@
                             </div>
                             Pessoas
                         </a>
-
+                        <a class="nav-link" href="cadastro-curador.html">
+                            <div class="sb-nav-link-icon">
+                                <i class="fas fa-chart-area"></i>
+                            </div>
+                            Cadastro curador
+                        </a>
+                        
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon">
                                 <i class="fas fa-columns"></i>
@@ -78,44 +84,14 @@
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-static.html">Movimentações</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Categorias</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Contas Bancárias</a>
+                                <a class="nav-link" href="cadastro-conta-bancaria.html">Cadastro Contas Bancárias</a>
+                                <a class="nav-link" href="lancar-despesa-casa.html">Lançar despesa Casa</a>
+                                <a class="nav-link" href="lancar-Despesa-Morador.html">Lançar despesa Morador</a>
+                                <a class="nav-link" href="movimentar-conta-casa.html">movimentar Conta Casa</a>
+                                <a class="nav-link" href="movimentar-conta-morador.html">Movimentar conta Morador</a>
+                                <a class="nav-link" href="Incluir-doacao-casa.html">incluir doação Casa</a>
                             </nav>
                         </div>
-
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon">
-                                <i class="fas fa-columns"></i>
-                            </div>
-                            Serviços
-                            <div class="sb-sidenav-collapse-arrow">
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-static.html">Movimentações</a>
-                            </nav>
-                        </div>
-
-
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon">
-                                <i class="fas fa-columns"></i>
-                            </div>
-                            Estoque
-                            <div class="sb-sidenav-collapse-arrow">
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-static.html">Movimentações</a>
-                            </nav>
-                        </div>
-
-
                         <div class="sb-sidenav-menu-heading">Complementos</div>
 
                         <a class="nav-link" href="charts.html">
@@ -149,6 +125,7 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
+
             <main>
                 <div class="container-fluid px-4">
                     <h1 class="mt-4">Dashboard</h1>
